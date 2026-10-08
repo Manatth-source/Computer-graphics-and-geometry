@@ -18,6 +18,9 @@ namespace core {
 		void clear(sf::Color color = sf::Color::Black);
 		void putPixel(int x, int y, sf::Color color);
 		void display();
+
+		int getWidth() const;
+		int getHeight() const;
 	};
 
 }

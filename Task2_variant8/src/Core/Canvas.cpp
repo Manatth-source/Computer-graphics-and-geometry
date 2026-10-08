@@ -47,3 +47,15 @@ void core::Canvas::display()
         pixels_.clear();
     }
 }
+
+
+int core::Canvas::getWidth() const 
+{ 
+    return window_ ? static_cast<int>(window_->getSize().x) : 0; 
+}
+
+
+int core::Canvas::getHeight() const
+{
+    return window_ ? static_cast<int>(window_->getSize().y) : 0;
+}

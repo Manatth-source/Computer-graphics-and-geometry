@@ -83,3 +83,6 @@ Release/
 
 # VS temporary build folder
 Computer.46ecf1e9/
+
+# Text files
+*.txt

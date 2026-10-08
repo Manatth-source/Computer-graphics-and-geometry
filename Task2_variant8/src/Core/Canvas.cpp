@@ -33,7 +33,7 @@ void core::Canvas::putPixel(int x, int y, sf::Color color)
     if (x >= 0 && x < static_cast<int>(size.x) &&
         y >= 0 && y < static_cast<int>(size.y))
     {
-        sf::Vertex pixel(sf::Vector2f(static_cast<float>(x), static_cast<float>(y)), color);
+        sf::Vertex pixel(sf::Vector2f(static_cast<float>(x), static_cast<float>(y)), color); 
         pixels_.append(pixel);
     }
 }

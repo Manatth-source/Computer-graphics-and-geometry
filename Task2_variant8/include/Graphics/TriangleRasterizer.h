@@ -1,12 +1,12 @@
 #pragma once
 
 #include "Core/Canvas.h"
-
+#include "Core/Color.h"
 
 struct Vertex 
 {
 	int x, y;
-	sf::Color color;
+	core::Color color;
 };
 
 
@@ -19,5 +19,5 @@ private:
 public:
 	TriangleRasterizer(Vertex a, Vertex b, Vertex c);
 
-	void fillTriangle(const Canvas& canves);
+	void fillTriangle(core::Canvas& canves);
 };

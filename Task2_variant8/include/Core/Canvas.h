@@ -2,15 +2,22 @@
 
 #include <SFML/Graphics.hpp>
 
+namespace core {
 
-class Canvas
-{
-private:
-	const sf::RenderWindow* window_;
+	class Canvas
+	{
+	private:
+		sf::RenderWindow* window_;
+		sf::VertexArray pixels_;
 
-public:
-	Canvas(const sf::RenderWindow& window);
+	public:
+		Canvas(sf::RenderWindow& window);
 
-	void setWindow(const sf::RenderWindow& window);
-};
+		void setWindow(sf::RenderWindow& window);
 
+		void clear(sf::Color color = sf::Color::Black);
+		void putPixel(int x, int y, sf::Color color);
+		void display();
+	};
+
+}

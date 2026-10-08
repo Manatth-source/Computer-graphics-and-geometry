@@ -25,6 +25,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Core\Canvas.h" />
+    <ClInclude Include="include\Core\Color.h" />
     <ClInclude Include="include\Graphics\TriangleRasterizer.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
